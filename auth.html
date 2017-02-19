@@ -16,50 +16,50 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <main class="entry">
-      <section class="entry__block">
-        <p class="entry__header">Авторизуйтесь</p>
-        <form class="auth-form">
-          <div class="auth-form__field-group">
-            <div class="auth-form__icon-container">
-              <svg class="auth-form__icon auth-form__icon-login">
+    <main class="hero hero_fullscreen">
+      <section class="hero__container">
+        <form class="form">
+          <p class="form__title">Авторизуйтесь</p>
+          <div class="form__field-group">
+            <div class="form__icon-container">
+              <svg class="form__icon form__icon-login">
                 <use xlink:href="/assets/img/sprite.svg#login"></use>
               </svg>
             </div>
-            <input class="auth-form__field" placeholder="Логин" name="login">
+            <input class="form__field" placeholder="Логин" name="login">
           </div>
-          <div class="auth-form__field-group">
-            <div class="auth-form__icon-container">
-              <svg class="auth-form__icon auth-form__icon-password">
+          <div class="form__field-group">
+            <div class="form__icon-container">
+              <svg class="form__icon form__icon-password">
                 <use xlink:href="/assets/img/sprite.svg#password"></use>
               </svg>
             </div>
-            <input class="auth-form__field" type="password" placeholder="Пароль" name="password">
+            <input class="form__field" type="password" placeholder="Пароль" name="password">
           </div>
-          <div class="auth-form__field-group">
-            <input class="auth-form__checkbox" type="checkbox" id="auth-human" name="human">
-            <label class="auth-form__label" for="auth-human">Я человек</label>
+          <div class="form__field-group">
+            <input class="form__checkbox" type="checkbox" id="human" name="human">
+            <label class="form__label" for="human">Я человек</label>
           </div>
-          <p class="auth-form__text">Вы точно не робот?</p>
-          <div class="auth-form__field-group">
-            <div class="auth-form__field-group-inline">
-              <input class="auth-form__radio" type="radio" id="auth-yes" name="answer">
-              <label class="auth-form__label" for="auth-yes">Да</label>
+          <p class="form__text">Вы точно не робот?</p>
+          <div class="form__field-group">
+            <div class="form__field-group-inline">
+              <input class="form__radio" type="radio" id="yes" name="answer">
+              <label class="form__label" for="yes">Да</label>
             </div>
-            <div class="auth-form__field-group-inline">
-              <input class="auth-form__radio" type="radio" id="auth-no" name="answer">
-              <label class="auth-form__label" for="auth-no">Не уверен</label>
+            <div class="form__field-group-inline">
+              <input class="form__radio" type="radio" id="no" name="answer">
+              <label class="form__label" for="no">Не уверен</label>
             </div>
           </div>
+          <nav class="form-menu-container form-menu-container_equal">
+            <ul class="form-menu">
+              <li class="form-menu__item"><a class="form-menu__link" href="index.html">На главную</a></li>
+              <li class="form-menu__item"><a class="form-menu__link" href="#">Войти</a></li>
+            </ul>
+          </nav>
         </form>
-        <nav class="entry__menu entry__menu_equal">
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="index.html">На главную</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Войти</a></li>
-          </ul>
-        </nav>
       </section>
-      <p class="entry__text-bottom">© Александр Никольский | создано с любовью в LoftSchool | 2017</p>
+      <p class="footer-copyright">© Александр Никольский | создано с любовью в LoftSchool | 2017</p>
     </main>
   </body>
 </html>

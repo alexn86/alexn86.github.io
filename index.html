@@ -16,15 +16,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <main class="entry">
-      <div class="entry__auth-button"><a class="entry__auth-link" href="auth.html"> Авторизоваться</a></div>
-      <section class="entry__block">
+    <main class="hero hero_fullscreen"><a class="auth-button" href="auth.html">Авторизоваться</a>
+      <section class="hero__container">
         <div class="user">
           <div class="user__avatar-box"><img class="user__avatar" src="assets/img/avatar.png"></div>
           <p class="user__name">Александр Никольский</p>
           <p class="user__title">Личный сайт веб разработчика</p>
-        </div>
-        <div class="entry__socials">
+          <!--.socials-container-->
           <ul class="socials">
             <li class="socials__item"><a class="socials__link" href="https://vk.com/id2561950" target="_blank">
                 <svg class="socials__icon socials__icon_vk">
@@ -39,16 +37,16 @@
                   <use xlink:href="/assets/img/sprite.svg#skype"></use>
                 </svg></a></li>
           </ul>
+          <nav class="form-menu-container">
+            <ul class="form-menu">
+              <li class="form-menu__item"><a class="form-menu__link" href="works.html">Мои работы</a></li>
+              <li class="form-menu__item"><a class="form-menu__link" href="about.html">Обо мне</a></li>
+              <li class="form-menu__item"><a class="form-menu__link" href="blog.html">Блог</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="entry__menu">
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
-            <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-          </ul>
-        </nav>
       </section>
-      <p class="entry__text-bottom">© Александр Никольский | создано с любовью в LoftSchool | 2017</p>
+      <p class="footer-copyright">© Александр Никольский | создано с любовью в LoftSchool | 2017</p>
     </main>
   </body>
 </html>
