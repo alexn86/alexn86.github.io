@@ -6,8 +6,8 @@
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <!--meta(content="width=device-width, initial-scale=1" name="viewport")-->
-    <meta name="viewport" content="width=1200">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--meta(name="viewport" content="width=1200")-->
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
@@ -16,50 +16,54 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <main class="hero hero_fullscreen">
-      <section class="hero__container">
-        <form class="form">
-          <p class="form__title">Авторизуйтесь</p>
-          <div class="form__field-group">
-            <div class="form__icon-container">
-              <svg class="form__icon form__icon-login">
-                <use xlink:href="/assets/img/sprite.svg#login"></use>
-              </svg>
+    <main class="hero hero_welcome">
+      <video class="hero__video-file" src="assets/img/night.mp4" autoplay loop></video>
+      <div class="hero__bg"></div>
+      <section class="hero__container hero__container_welcome">
+        <div class="user-container">
+          <form class="form">
+            <p class="form__title hero__form-title">Авторизуйтесь</p>
+            <div class="form__field-group">
+              <div class="form__icon-container">
+                <svg class="form__icon form__icon-login">
+                  <use xlink:href="/assets/img/sprite.svg#login"></use>
+                </svg>
+              </div>
+              <input class="form__field hero__form-field" placeholder="Логин" name="login">
             </div>
-            <input class="form__field" placeholder="Логин" name="login">
-          </div>
-          <div class="form__field-group">
-            <div class="form__icon-container">
-              <svg class="form__icon form__icon-password">
-                <use xlink:href="/assets/img/sprite.svg#password"></use>
-              </svg>
+            <div class="form__field-group">
+              <div class="form__icon-container">
+                <svg class="form__icon form__icon-password">
+                  <use xlink:href="/assets/img/sprite.svg#password"></use>
+                </svg>
+              </div>
+              <input class="form__field hero__form-field" type="password" placeholder="Пароль" name="password">
             </div>
-            <input class="form__field" type="password" placeholder="Пароль" name="password">
-          </div>
-          <div class="form__field-group">
-            <input class="form__checkbox" type="checkbox" id="human" name="human">
-            <label class="form__label" for="human">Я человек</label>
-          </div>
-          <p class="form__text">Вы точно не робот?</p>
-          <div class="form__field-group">
-            <div class="form__field-group-inline">
-              <input class="form__radio" type="radio" id="yes" name="answer">
-              <label class="form__label" for="yes">Да</label>
+            <div class="form__field-group">
+              <input class="form__checkbox" type="checkbox" id="human" name="human">
+              <label class="form__label" for="human">Я человек</label>
             </div>
-            <div class="form__field-group-inline">
-              <input class="form__radio" type="radio" id="no" name="answer">
-              <label class="form__label" for="no">Не уверен</label>
+            <p class="form__text">Вы точно не робот?</p>
+            <div class="form__field-group">
+              <div class="form__field-group-inline">
+                <input class="form__radio" type="radio" id="yes" name="answer">
+                <label class="form__label" for="yes">Да</label>
+              </div>
+              <div class="form__field-group-inline">
+                <input class="form__radio" type="radio" id="no" name="answer">
+                <label class="form__label" for="no">Не уверен</label>
+              </div>
             </div>
-          </div>
-          <nav class="form-menu-container form-menu-container_equal">
-            <ul class="form-menu">
-              <li class="form-menu__item"><a class="form-menu__link" href="index.html">На главную</a></li>
-              <li class="form-menu__item"><a class="form-menu__link" href="#">Войти</a></li>
-            </ul>
-          </nav>
-        </form>
+          </form>
+        </div>
+        <nav class="form-menu">
+          <ul class="form-menu__list">
+            <li class="form-menu__item form-menu__item_equal"><a class="form-menu__link" href="index.html">На главную</a></li>
+            <li class="form-menu__item form-menu__item_equal"><a class="form-menu__link" href="#">Войти</a></li>
+          </ul>
+        </nav>
       </section>
-      <p class="copyright">© Александр Никольский | создано с любовью в LoftSchool | 2017</p>
+      <p class="hero__copyright copyright"><span class="wrap">© Александр Никольский</span><span class="wrap">&nbsp;создано с любовью в LoftSchool | 2017</span></p>
     </main>
   </body>
 </html>
