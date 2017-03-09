@@ -16,7 +16,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <section class="hero hero_welcome">
+    <main class="hero hero_welcome">
       <video class="hero__video-file" src="assets/img/night.mp4" autoplay muted playsinline loop></video>
       <div class="hero__bg">
         <!--img(src='assets/img/night_no_bg_big.png').hero__bg-img-->
@@ -99,6 +99,13 @@
         </div>
       </section><a class="auth-button" href="#">Авторизоваться</a>
       <p class="hero__copyright copyright"><span class="wrap">© Александр Никольский</span><span class="wrap">&nbsp;создано с любовью в LoftSchool | 2017</span></p>
-    </section>
+    </main>
+    <div class="preloader">
+      <svg class="preloader__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="76" height="76" viewbox="0 0 76 76" xml:space="preserve">
+        <text class="preloader__percent" x="38" y="38">0%</text>
+        <circle class="preloader__circle-big" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="38" cy="38" r="25" transform="rotate(-90 38 38)"></circle>
+        <circle class="preloader__circle-small" cx="38" cy="4.5" r="4.5"></circle>
+      </svg>
+    </div>
   </body>
 </html>
