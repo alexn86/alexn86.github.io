@@ -55,26 +55,26 @@
         </div>
         <div class="hero__container-back">
           <div class="user-container">
-            <form class="form">
+            <form class="form hero__form">
               <p class="form__title hero__form-title">Авторизуйтесь</p>
               <div class="form__field-group">
+                <input class="form__field form__textfield hero__form-field" type="text" placeholder="Логин" name="login" data-field="логин">
                 <div class="form__icon-container">
                   <svg class="form__icon form__icon-login">
                     <use xlink:href="/assets/img/sprite.svg#login"></use>
                   </svg>
                 </div>
-                <input class="form__field hero__form-field" placeholder="Логин" name="login">
               </div>
               <div class="form__field-group">
+                <input class="form__field form__textfield hero__form-field" type="password" placeholder="Пароль" name="password" data-field="пароль">
                 <div class="form__icon-container">
                   <svg class="form__icon form__icon-password">
                     <use xlink:href="/assets/img/sprite.svg#password"></use>
                   </svg>
                 </div>
-                <input class="form__field hero__form-field" type="password" placeholder="Пароль" name="password">
               </div>
               <div class="form__field-group">
-                <input class="form__checkbox" type="checkbox" id="human" name="human">
+                <input class="form__checkbox" type="checkbox" id="human" name="human" required>
                 <label class="form__label" for="human">Я человек</label>
               </div>
               <p class="form__text">Вы точно не робот?</p>
@@ -93,7 +93,7 @@
           <nav class="form-menu">
             <ul class="form-menu__list">
               <li class="form-menu__item form-menu__item_equal form-menu__item_flip"><a class="form-menu__link" href="#">На главную</a></li>
-              <li class="form-menu__item form-menu__item_equal"><a class="form-menu__link" href="#">Войти</a></li>
+              <li class="form-menu__item form-menu__item_equal form-menu__item_submit"><a class="form-menu__link" href="#">Войти</a></li>
             </ul>
           </nav>
         </div>
